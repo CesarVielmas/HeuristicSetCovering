@@ -114,6 +114,11 @@ while(exitCicle):
    #when complete all cover elements then exit 
    if(valueMax>=filas):
       print("Costo: ",costAcumulate);
+      valorOptimo = int(input("Ingrese el valor optimo de este problema\n"));
+      if(costAcumulate>valorOptimo):
+         print("El valor optimo del costo obtenido por el programa es un",round(((costAcumulate/valorOptimo)-1)*100),"% mas costoso del valor optimo");
+      elif(costAcumulate<valorOptimo):
+         print("El valor optimo del costo obtenido por el programa es un",round((valorOptimo/costAcumulate)*100),"% menos costoso que el verdadero valor optimo");
       exitCicle = False;
 
    
